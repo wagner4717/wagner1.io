@@ -1,0 +1,505 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	background: black;
+}
+.header {
+	background-image: url("images/festival.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 700px;
+
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.row:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.block-1 {
+	height: 100px;
+	padding-top: 10px;
+}
+.block-2 {
+	height: 75%;
+}
+
+/* контекстное меню*/
+.menu {
+	display: flex;
+	justify-content: space-around;
+}
+.menu a{
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: 'Permanent Marker', cursive;
+	position: relative;
+	display: block;
+}
+.menu a:hover {
+	color: rgb(232, 74, 172);
+}
+.submenu{
+	z-index: 10;
+	display: none;
+	position: absolute;
+}
+.submenu a:hover{
+	display: block;
+}
+.menu li:hover .submenu {
+	display: block;
+}
+
+
+/*block 2*/
+.block-2 {
+	font-family: 'Open Sans', sans-serif;
+}
+.the-best {
+	text-align: center;
+	font-size: 50px;
+}
+.title {
+	font-size: 30px;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	padding-left: 320px;
+}
+/*main*/
+main {
+	color: white;
+	height: 1000px;
+}
+.main-name{
+	text-decoration: none;
+	font-size: 50px;
+	text-align: center;
+	padding: 60px 0;
+	font-family: 'Permanent Marker', cursive;
+	color: white;
+}
+.col1:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*колонки по фестивалям*/
+.festivals {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+}
+.col-md {
+	background-image: url(images/upark1.jpg);
+	background-position: center;
+	height: 500px;
+	width: 32%;
+	position: relative;
+}
+.block {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background-color: white;
+	padding: 5px;
+	display: none;
+	color: black;
+}
+.col-md:hover .block {
+	display: block;
+}
+.col-md-1 {
+	border: 1px solid white;
+	height: 500px;
+	width: 32%;
+	background-image: url(images/tomorrowland.jpg);
+	position: relative;
+	top: 155px;
+}
+.block1 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background-color: rgba(255, 209, 232, 1);
+	padding: 5px;
+	display: none;
+	color: black;
+}
+.col-md-1:hover .block1 {
+	display: block;
+}
+.col-md-2 {
+	background-image: url(images/coachell555.png);
+	height: 500px;
+	width: 32%;
+	position: relative;
+}
+.block2 {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	background-color: rgba(255,255,255,0.9);
+	padding: 5px;
+	display: none;
+	color: black;
+}
+.col-md-2:hover .block2 {
+	display: block;
+}
+/*описание в блоке фестиваля*/
+.name-festival {
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Mansalva', cursive;
+	padding: 15px;
+	color: black;
+}
+.description-festival {
+	font-size: 20px;
+	font-family: 'Noto Sans KR', sans-serif;
+	padding: 10px;
+	font-weight: bold;
+}
+.description1-festival {
+	font-family: 'Chilanka', cursive;
+	font-size: 20px;
+	padding: 20px;
+}
+button {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid grey;
+	width: 150px;
+	height: 50px;
+	background-color: rgba(99, 95, 95, 0.7);
+	margin-left: 100px;
+	margin-top: 15px;
+}
+
+/*article*/
+/*description block artist*/
+article {
+	height: 1000px;
+}
+.name-artists {
+	font-size: 50px;
+	text-align: center;
+	padding: 40px 0;
+	font-family: 'Permanent Marker', cursive;
+	color: white;
+}
+.description-art {
+	display: flex;
+	justify-content: space-around;
+	height: 475px;
+	width: 1167px;
+	background-image: url(images/coachella.png);
+	background-size: 100%;
+	background-position: center;
+	margin: auto;
+}
+.col2:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.col-md-3 {
+	border: 2px solid black;
+	height: 300px;
+	width: 45%;
+	background-image: url(images/dua.jpg);
+	margin-top: 15px;
+	text-align: right;
+}
+.col-md-3 a{
+	color: white;
+	font-size: 40px;
+	font-family: 'Chilanka', cursive;
+}
+.col-md-3-2 {
+	border: 2px solid black;
+	background-image: url(images/dragons.jpg);
+	width: 45%;
+	height: 300px;
+	margin-top: 55px;
+}
+.col-md-3-2 a{
+	color: white;
+	font-size: 40px;
+	font-family: 'Chilanka', cursive;
+}
+
+/*News about Artist*/
+.artists {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 45px;
+	height: 460px;
+	padding-top: 30px;
+}
+.artists:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.col-art {
+	height: 250px;
+	border: 1px solid white;
+	background-image: url(images/odesza.png);
+	background-position: center;
+	position: relative;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.block-art{
+	background-color: rgba(252, 252, 252, 0.9);
+	position: absolute;
+	display: none;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+.col-art:hover .block-art{
+	display: block;
+}
+.col-art-1 {
+	height: 250px;
+	border: 1px solid white;
+	position: relative;
+	background-image: url(images/red.jpg);
+	background-position: center;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.block-art-1{
+	background-color: rgba(252, 252, 252, 1);
+	position: absolute;
+	display: none;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+.col-art-1:hover .block-art-1{
+	display: block;
+}
+.col-art-2 {
+	height: 250px;
+	border: 1px solid white;
+	position: relative;
+	background-image: url(images/dm.jpg);
+	background-position: center;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.block-art-2{
+	background-color: rgba(252, 252, 252, 1);
+	position: absolute;
+	display: none;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+.col-art-2:hover .block-art-2{
+	display: block;
+}
+.col-art-3 {
+	height: 250px;
+	border: 1px solid white;
+	position: relative;
+	background-image: url(images/cb.jpg);
+	background-position: center;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.block-art-3{
+	background-color: rgba(252, 252, 252, 1);
+	position: absolute;
+	display: none;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+.col-art-3:hover .block-art-3{
+	display: block;
+}
+.col-art-4 {
+	height: 250px;
+	border: 1px solid white;
+	position: relative;
+	background-image: url(images/artic.jpg);
+	background-position: center;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.block-art-4{
+	background-color: rgba(252, 252, 252, 1);
+	position: absolute;
+	display: none;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+.col-art-4:hover .block-art-4{
+	display: block;
+}
+.col-art-5 {
+	height: 250px;
+	border: 1px solid white;
+	position: relative;
+	background-image: url(images/chain.jpg);
+	background-position: center;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.block-art-5{
+	background-color: rgba(252, 252, 252, 1);
+	position: absolute;
+	display: none;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+.col-art-5:hover .block-art-5{
+	display: block;
+}
+h1{
+	font-size: 25px;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Mansalva', cursive;
+	color: black;
+	text-decoration: none;
+}
+h1 a{
+	color: black;
+}
+.description-news {
+	font-family: 'Chilanka', cursive;
+	font-size: 20px;
+	padding: 10px;
+	color: black;
+}
+
+/*section*/
+section {
+	height: 1000px;
+}
+/*описание Gossip*/
+.gossip-description:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.get-inspired {
+	color: white;
+	font-size: 40px;
+	font-family: 'Mansalva', cursive;
+}
+.see-all {
+	text-align: right;
+	font-size: 30px;
+	font-family: 'Chilanka', cursive;
+}
+.see-all:hover a{
+	color: grey;
+}
+.see-all a{
+	text-decoration: none;
+	color: white;
+}
+.read-the-last {
+	font-family: 'Chilanka', cursive;
+	font-size: 20px;
+	color: white;
+}
+/*столбики новостей*/
+.line1 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
+.line2 {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px; 
+}
+.gossip-news {
+	width: 340px;
+	height: 300px;
+	color: white;
+	position: relative;
+}
+.gossip-news:hover {
+	border: 1px solid white;
+}
+.gossip-news a{
+	text-decoration: none;
+}
+.news-name {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	padding-top: 5px;
+}
+.news-date {
+	font-family: 'Chilanka', cursive;
+	color: white;
+	font-size: 15px;
+	bottom: 1px;
+	position: absolute;
+}
+
+
+
+/*footer*/
+footer {
+	height: 1000px;
+}
+/*картинки*/
+.gallery {
+	text-decoration: none;
+	font-size: 50px;
+	text-align: center;
+	padding: 60px 0;
+	font-family: 'Permanent Marker', cursive;
+	color: white;
+}
+.photo {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+.photo img{
+	width: 750px;
+	height: 515px;
+	text-align: center;
+}
+/*соц сети*/
+.social-logo {
+	height: 178px;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 150px;
+}
+.social-logo img {
+	width: 50px;
+}
